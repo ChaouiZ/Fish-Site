@@ -1,0 +1,121 @@
+body {
+    background-color: rgb(204, 224, 224);
+    margin: 0px;
+}
+
+.title-bar {
+    background-color: rgb(47, 117, 134);
+    display: flex;
+    margin: 0px;
+    padding: -5px;
+    flex-direction: column;
+}
+
+.topbar-logo-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.topbar-logo-wrapper > * {
+    max-height: 150px;
+    width: auto;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul > * {
+    flex: 1 1 18.5em;
+
+}
+
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    height: 4em;
+    margin: 0;
+    background-color: rgb(47, 117, 134);
+    border: solid rgb(47, 117, 134);
+    box-shadow: 0px 3px rgb(162, 196, 204);
+    color: rgb(232, 238, 239);
+    font-weight: bold;
+    transition: .5s;
+}
+
+@media screen and (max-width: 980px) {
+    .topbar-logo-middle, .topbar-logo-right {
+        display: none;
+    }
+}
+
+li:hover {
+    cursor: pointer;
+    background-color:rgb(162, 196, 204);
+    border: solid rgb(162, 196, 204);
+    color: rgb(47, 117, 134);
+}
+
+li:active {
+    background-color: rgb(202, 207, 208);
+    border: solid rgb(202, 207, 208);
+    box-shadow: 0px 3px rgb(202, 207, 208);
+}
+
+
+.hero-wrapper, .group2-wrapper {
+    display: flex;
+}
+
+.hero-text > h1 {
+    font-size: 4rem;;
+}
+
+.hero-text > p {
+    font-size: 1.5rem;
+}
+
+.hero-image, .group2-image {
+    max-width: 45%;
+    padding: 3rem;
+}
+
+.hero-text {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.group2-text {
+    display: flex;
+    padding: 3rem;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+
+.group2-text > h1 {
+    font-size: 4rem;
+}
+
+.group2-text > p {
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
