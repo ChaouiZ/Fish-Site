@@ -1,6 +1,6 @@
 body {
     background-color: rgb(204, 224, 224);
-    background-image: linear-gradient(to bottom, rgb(204, 224, 224), rgb(14, 57, 57));
+    background-image: linear-gradient(to bottom, rgb(204, 224, 224), rgb(14, 57, 57) 70%);
     margin: 0px;
 }
 
@@ -114,6 +114,24 @@ li:active {
     justify-content: end;
 }
 
+.hero-text {
+    color: rgb(12, 39, 39);
+}
+
+.group2-text {
+    color: rgb(12, 39, 39);
+}
+
+.group3-text {
+    color: rgb(199, 217, 217);
+
+}
+
+.group4-text {
+    color: rgb(199, 217, 217);
+
+}
+
 .group2-text, .group4-text > h1 {
     font-size: 4rem;
 }
@@ -147,5 +165,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* font-weight: bold; */
+    font-size: larger;
 
 }
