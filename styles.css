@@ -1,5 +1,6 @@
 body {
     background-color: rgb(204, 224, 224);
+    background-image: linear-gradient(to bottom, rgb(204, 224, 224), rgb(14, 57, 57));
     margin: 0px;
 }
 
@@ -73,31 +74,39 @@ li:active {
 }
 
 
-.hero-wrapper, .group2-wrapper {
+.hero-wrapper, .group2-wrapper, .group3-wrapper, .group4-wrapper {
     display: flex;
 }
 
-.hero-text > h1 {
+.hero-text, .group3-text > h1 {
     font-size: 4rem;;
 }
 
-.hero-text > p {
+.hero-text, .group3-text > p {
     font-size: 1.5rem;
 }
 
-.hero-image, .group2-image {
+.hero-image, .group3-image {
     max-width: 45%;
     padding: 3rem;
+    border-radius: 45% 15% 45% 15%;
 }
 
-.hero-text {
+.group2-image, .group4-image {
+    max-width: 45%;
+    padding: 3rem;
+    border-radius: 15% 45% 15% 45%;
+}
+
+
+.hero-text, .group3-text {
     padding: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
 
-.group2-text {
+.group2-text, .group4-text {
     display: flex;
     padding: 3rem;
     flex-direction: column;
@@ -105,11 +114,11 @@ li:active {
     justify-content: end;
 }
 
-.group2-text > h1 {
+.group2-text, .group4-text > h1 {
     font-size: 4rem;
 }
 
-.group2-text > p {
+.group2-text, .group4-text > p {
     font-size: 1.5rem;
     text-align: right;
 }
@@ -118,4 +127,25 @@ hr {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.footer-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    max-width: 412px;
+
+}
+
+footer {
+    height: 5rem;
+    margin-top: 2rem;
+    background-color: rgb(163, 110, 5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
